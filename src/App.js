@@ -342,8 +342,25 @@ parseString(messy) {
 getQuotes(searchItem) {
   var page = this.getPage(function(pageId, tle){
     if (pageId === -1) {
-      this.setState({pageTitle: 'Bad search'});
-      this.setState({quotes: ['THIS IS A BAD SEARCH']});
+      this.setState({pageTitle: 'Bad search',
+        anger: .01,
+        joy: .01,
+        fear: .01,
+        sadness: .01,
+        surprise: .01,
+        beginning: '',
+        quoteType: "",
+        quote: "",
+        quoteTypeTwo: "",
+        quoteTwo: "",
+        joyWidth: '0%',
+        sadnessWidth: '0%',
+        angerWidth: '0%',
+        surpriseWidth: '0%',
+        fearWidth: '0%',
+        relResult: 'Created by: Michelle Pine, Abigail Hodge, Sharon He, and Sam Price',
+        quoteTextOne: '',
+        quoteTextTwo: '',});
     } else {
       this.setState({pageTitle: tle});
       this.setState({isBadSearch: false});
@@ -371,7 +388,25 @@ getQuotes(searchItem) {
               }.bind(this));
             }
           } else {
-            this.setState({beginning: 'Error: Please be more specific or try new entry'});
+            this.setState({beginning: 'Error: Please be more specific or try new entry',
+              anger: .01,
+              joy: .01,
+              fear: .01,
+              sadness: .01,
+              surprise: .01,
+              quoteType: "",
+              quote: "",
+              quoteTypeTwo: "",
+              quoteTwo: "",
+              joyWidth: '0%',
+              sadnessWidth: '0%',
+              angerWidth: '0%',
+              surpriseWidth: '0%',
+              fearWidth: '0%',
+              relResult: 'Created by: Michelle Pine, Abigail Hodge, Sharon He, and Sam Price',
+              quoteTextOne: '',
+              quoteTextTwo: '',
+                           });
           }
         }.bind(this));
       } }.bind(this), searchItem);
