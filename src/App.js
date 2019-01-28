@@ -189,12 +189,12 @@ getEmote(data, callback) {
   $.post(
     'https://apiv2.indico.io/emotion/batch',
     JSON.stringify({
-      'api_key': 'fc9a41460532346def3a53be56a5cbcc',
+      'api_key': "fc9a41460532346def3a53be56a5cbcc",
       'data': data
     })
 
   ).then(function(res) {
-    callback(res);
+    callback(JSON.parse(res));
   });
 }
 
@@ -383,7 +383,7 @@ getQuotes(searchItem) {
             if (arr === null) {
               this.setState({quotes: ['Please be more specific']});
             } else {
-              var emotions = this.getEmote(arr, function(dataset) {
+              var emotions = this.getEmote(arr, function(dataset){
                 this.calcEmote(dataset.results, arr);
               }.bind(this));
             }
