@@ -189,7 +189,7 @@ getEmote(data, callback) {
   $.post(
     'https://apiv2.indico.io/emotion/batch',
     JSON.stringify({
-      'api_key': "601a9a72cc56692d1f388c608fa955b8",
+      'api_key': "fc9a41460532346def3a53be56a5cbcc",
       'data': data
     })
 
