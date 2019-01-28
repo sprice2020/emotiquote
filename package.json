@@ -1,5 +1,5 @@
 {
-  "homepage":"http://abigailhodge.github.io/emotiquote",
+  "homepage": "http://sprice2020.github.io/emotiquote",
   "name": "movies",
   "version": "0.1.0",
   "private": true,
@@ -11,7 +11,7 @@
     "react-dom": "^16.2.0",
     "react-fontawesome": "^1.6.1",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1"
+    "react-scripts": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
